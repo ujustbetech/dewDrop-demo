@@ -35,7 +35,7 @@ function demo3() {
 
                         <img src="/images/img.jpg" />
                         <span>{post.title}</span>
-                        <button>{post.title}</button>
+                        <button>{post.id}</button>
 
                     </div>
                 ))}
