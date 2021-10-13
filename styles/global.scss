@@ -1,0 +1,30 @@
+$blue-clr: #003466;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  padding-bottom:80px;
+  display: block;
+}
+.anim {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .shadow {
+    -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px -2px 5px 0px rgba(168, 145, 145, 0.36);
+  }
+  
+  .shadow2 {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-wrapper{
+    img{width: 100px;}
+  }
