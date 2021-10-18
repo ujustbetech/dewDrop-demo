@@ -7,7 +7,7 @@ function login() {
         <div>
             <div className="login-wrapper">
                 <div className="card card-container">
-                    <img src="/images/logo.png" />
+                    <img src="/images/logo.png"  />
 
                     <form>
 
@@ -27,32 +27,17 @@ function login() {
 
                                 <input
                                     type="password"
-                                    className="form-password"
+                                    className="form-password"   
                                     name="password"
                                 />
                             </li>
                         </ul>
 
-
-
-
-
-                        <input
-                            type="text"
-                            className="form-password"
-                            name="email"
-                        />
-
                         <button>
-
-
                             <span>Explore</span>
-
                         </button>
 
                     </form>
-
-
 
                 </div>
 

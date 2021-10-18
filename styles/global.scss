@@ -26,5 +26,17 @@ body {
   }
 
   .login-wrapper{
-    img{width: 100px;}
+    background-color: #003466;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    align-content: center;
+    form {
+      width: 100%;
   }
+}
+.card-containe{
+  width: 200;
+  height: 150;
+}

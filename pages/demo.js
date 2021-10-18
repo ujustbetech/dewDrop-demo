@@ -5,7 +5,10 @@ import React from 'react'
 function demo() {
     return (
         <div>
-       <div className="card">
+        <ul>
+            <li>
+            <div className="card">
+                <div>
                     <Image 
                     src="/images/img.jpg"
                     width={2400}
@@ -17,7 +20,10 @@ function demo() {
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" className="btn btn-primary">Go somewhere</a>
                         </div>
-                </div>
+                 </div>       
+            </div>
+                </li>
+            </ul>
         </div>
            
         

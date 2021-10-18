@@ -11,9 +11,9 @@ function demo3() {
     function fetchdata() {
         fetch('https://jsonplaceholder.typicode.com/todos/')
             .then(response => response.json())
-            //.then(json => console.log(json))
-            .then((json) => {
-                //console.log("test",json);
+            // .then(json => console.log(json))
+            .then(json => {
+                // console.log(json);
                 setstate(json)
             })
     }
@@ -27,15 +27,16 @@ function demo3() {
         <div>
 
             <div className={styles.CardWrapper}>
-                <h2>Invitation Sent</h2>
+                <h2>Message List</h2>
 
 
-                {state.slice(0, 10).map((post) => (
+                {state.map((post) => (
                     <div className={`${styles.listingCard} ${styles.columnflex}`}>
 
                         <img src="/images/img.jpg" />
-                        <span>{post.title}</span>
                         <button>{post.id}</button>
+                        <span>{post.title}</span>
+                       
 
                     </div>
                 ))}

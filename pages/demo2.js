@@ -1,35 +1,61 @@
-import React, { useEffect } from 'react'
+import { Thead } from '@chakra-ui/table'
+import React, { useEffect, useState } from 'react'
 
-const [state, setstate] = useState([])
+
 
 function fetchdata(){
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    fetch('https://jsonplaceholder.typicode.com/todos/')
   .then(response => response.json())
   .then(json => console.log(json))
   .then((json) => {
       //console.log("test",json),
-              setstate(json)
+            //   setstate(json)
             })
 }
 
-useEffect(() => {
-    fetchdata()
+// useEffect(() => {
+//     fetchdata()
     
-}, [])
+// }, [])
 
 function demo2({ posts }) {
     return (
-        <ul>
-            {posts.map((post) => (
-                <li>
-                    <h3>{post.title}</h3>
-                    <p>{post.body}</p>
-                </li>
-            ))}
-        </ul>
+        
+        <>
+        
+        <table className="table table-hover" border="1">
+            <thead>
+
+                <tr>
+                   
+                        <th>Id</th>
+                        <th>Title</th>
+                 
+                </tr>
+            </thead>
+          
+            <tbody>
+               
+
+                    
+        {posts.map((post) => (
+          
+
+            <tr>
+                    <td>{post.id}</td>
+                    <td>{post.title}</td>
+                </tr>
+                 
+            
+        ))}
+                </tbody>
+            </table>
+        </>
+        
+          
+        
     )
 }
-
 
 // This function gets called at build time on server-side.
 // It won't be called on client-side, so you can even do
